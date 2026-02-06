@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Share Tech Mono', monospace; }
+
+body {
+    background-color: #0b0114;
+    color: #a7ff00;
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh; padding: 20px;
+}
+
+.nerv-interface {
+    background: rgba(45, 12, 80, 0.2);
+    border: 2px solid #a7ff00;
+    padding: 30px; border-radius: 4px;
+    width: 100%; max-width: 480px;
+    box-shadow: 0 0 20px rgba(167, 255, 0, 0.2);
+}
+
+h1 { color: #f97316; letter-spacing: 2px; margin-bottom: 5px; }
+
+.input-panel, .control-grid { display: flex; gap: 10px; margin-bottom: 20px; }
+
+input {
+    background: #1a052d; border: 1px solid #7c3aed;
+    color: #a7ff00; padding: 12px; outline: none; flex: 1;
+}
+
+input::placeholder { color: rgba(167, 255, 0, 0.5); }
+
+#addBtn {
+    background: #a7ff00; color: #1a052d; border: none;
+    font-weight: bold; cursor: pointer; padding: 0 20px; font-size: 1.5rem;
+}
+
+#deleteAllBtn {
+    background: #7c3aed; color: white; border: none; padding: 10px; 
+    font-size: 0.7rem; cursor: pointer; font-weight: bold;
+}
+
+.task-card {
+    background: #2d0c50; border-left: 5px solid #a7ff00;
+    margin-bottom: 15px; padding: 15px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.task-info h4 { color: #fff; font-size: 1rem; text-transform: uppercase; }
+.task-info p { color: #f97316; font-size: 0.75rem; margin-top: 5px; }
+
+.delete-btn {
+    background: transparent; border: 1px solid #ef4444; color: #ef4444;
+    padding: 5px 10px; cursor: pointer; font-size: 0.7rem;
+}
+
+.delete-btn:hover { background: #ef4444; color: white; }
+
+.emergency-alert { color: #ef4444; text-align: center; font-weight: bold; margin-top: 10px; }
+
+.status-bar {
+    color: #a7ff00; 
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #f97316; 
+    padding-bottom: 5px;
+    display: inline-block;
+    text-shadow: 0 0 5px rgba(167, 255, 0, 0.5);
+}
